@@ -76,15 +76,6 @@
     <a href="https://vk.com/"><img src="img//vk.png" alt=""></a>
     <a href="https://www.instagram.com/?hl=ru"><img src="img/instagram.png" alt=""></a>
 </div>
-<div class="restangle2"></div>
-<div class="restangle3"></div>
-<div class="restangle4"></div>
-<div class="restangle5"></div>
-<div class="text11">Отправить</div>
-
-<div class="text03">Имя</div>
-<div class="text04">E-Mail</div>
-<div class="text05">Телефон</div>
 
 <ul class="slider_picture">
     <li>
@@ -109,14 +100,23 @@
     </li>
 </ul>
  
-<form>
-    <label for="fname">Имя:</label>
-    <input type="text" id="fname" name="fname">
-    <label for="lname">Телефон:</label>
-    <input type="text" id="lname" name="lname">
-    <label for="ename">E-Mail:</label>
-    <input type="text" id="ename" name="ename">
-  </form>
+<div class="form-wrap">
+    <form method="post" action="form.php">
+      <div>
+        <label for="name">Имя</label>
+        <input type="text" name="name" required>
+      </div>
+      <div>
+        <label for="name">Телефон</label>
+        <input type="text" name="tel" required>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required>
+      </div>
+      <button type="submit">Отправить</button> 
+    </form> 
+  </div>
 
 </body>
 </html>
